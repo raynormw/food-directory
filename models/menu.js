@@ -5,11 +5,12 @@ module.exports = function(sequelize, DataTypes) {
     price: DataTypes.INTEGER,
     tag: DataTypes.STRING,
     picture: DataTypes.STRING,
-    id_resto: DataTypes.STRING
+    id_resto: DataTypes.INTEGER
   }, {
     classMethods: {
       associate: function(models) {
         // associations can be defined here
+        Menu.belongsTo(models.Resto, {foreignKey: 'id_resto'});
       }
     }
   });
