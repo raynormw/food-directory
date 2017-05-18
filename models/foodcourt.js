@@ -9,6 +9,7 @@ module.exports = function(sequelize, DataTypes) {
     classMethods: {
       associate: function(models) {
         // associations can be defined here
+        Foodcourt.hasMany(models.Resto, {foreignKey: 'id_foodcourt'})
       }
     }
   });
