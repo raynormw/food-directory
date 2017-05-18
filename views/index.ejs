@@ -1,11 +1,115 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
   <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.12.2/css/bootstrap-select.min.css">
+    <link rel="stylesheet" href="stylesheets/style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.12.2/js/bootstrap-select.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
     <title><%= title %></title>
-    <link rel='stylesheet' href='/stylesheets/style.css' />
   </head>
   <body>
-    <h1><%= title %></h1>
-    <p>Welcome to <%= title %>..</p>
+    <header class="business-header">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-12  text-center">
+            <br><br><br><br><br><br>
+            <hr>
+            <h1 class="tagline"><%= title %></h1>
+            <hr>
+            <p>Find the best menu in Jakarta</p>
+            <br>
+            <select class="selectpicker" title="Choose menu..." data-live-search="true">
+              <option data-tokens="ayam bakar">Ayam</option>
+              <option data-tokens="ayam_bakar">Ayam Bakar</option>
+              <option data-tokens="frosting">Sugar, Spice and all things nice</option>
+              <option data-tokens="ayam bakar">Ayam</option>
+              <option data-tokens="ayam_bakar">Ayam Bakar</option>
+              <option data-tokens="frosting">Sugar, Spice and all things nice</option>
+              <option data-tokens="ayam bakar">Ayam</option>
+              <option data-tokens="ayam_bakar">Ayam Bakar</option>
+              <option data-tokens="frosting">Sugar, Spice and all things nice</option>
+              <option data-tokens="ayam bakar">Ayam</option>
+              <option data-tokens="ayam_bakar">Ayam Bakar</option>
+              <option data-tokens="frosting">Sugar, Spice and all things nice</option>
+              <option data-tokens="ayam bakar">Ayam</option>
+              <option data-tokens="ayam_bakar">Ayam Bakar</option>
+              <option data-tokens="frosting">Sugar, Spice and all things nice</option>
+              <option data-tokens="ayam bakar">Ayam</option>
+              <option data-tokens="ayam_bakar">Ayam Bakar</option>
+              <option data-tokens="frosting">Sugar, Spice and all things nice</option>
+              <option data-tokens="ayam bakar">Ayam</option>
+              <option data-tokens="ayam_bakar">Ayam Bakar</option>
+              <option data-tokens="frosting">Sugar, Spice and all things nice</option>
+            </select>
+            <a class="btn btn-info btn-md" href="#">Go »</a>
+          </div>
+        </div>
+      </div>
+    </header>
+    <main>
+      <div class="container-fluid">
+        <div class="row content">
+          <div class="col-sm-3 sidenav">
+            <br>
+            <h4>Filter by Category</h4>
+            <ul class="nav nav-pills nav-stacked">
+              <li><a href="#section1">Japanese Food</a></li>
+              <li><a href="#section2">Pizza & Pasta</a></li>
+              <li><a href="#section3">Bakmie</a></li>
+              <li><a href="#section3">Seafood</a></li>
+              <li><a href="#section2">Coffee Shop</a></li>
+              <li><a href="#section3">Sweets & Desserts</a></li>
+              <li><a href="#section3">Sate</a></li>
+              <li><a href="#section3">Ayam & Ikan</a></li>
+            </ul><br>
+          </div>
+          <div class="col-sm-9">
+            <br>
+            <div class="col-sm-6">
+              <h4><small>Foodcourt A</small></h4>
+              <hr>
+              <img src="https://placehold.it/150x80?text=IMAGE" class="img-responsive" style="width:100%" alt="Image">
+              <h2>Ayam goreng</h2>
+              <h5><span class="label label-primary">Ayam & Ikan</span></h5><br>
+              <p>Price: IDR 50.000,-</p>
+              <p>Restaurant: Ayam goreng Suharti</p>
+            </div>
+            <div class="col-sm-6">
+              <h4><small>Foodcourt B</small></h4>
+              <hr>
+              <img src="https://placehold.it/150x80?text=IMAGE" class="img-responsive" style="width:100%" alt="Image">
+              <h2>Ayam Bakar</h2>
+              <h5><span class="label label-primary">Ayam & Ikan</span></h5><br>
+              <p>Price: IDR 20.000,-</p>
+              <p>Restaurant: R.M Sederhana</p>
+              <hr>
+            </div>
+            <div class="col-sm-6">
+              <h4><small>Foodcourt C</small></h4>
+              <hr>
+              <h2>R.M Ampera</h2>
+              <h5><span class="label label-success">Lorem</span></h5><br>
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+              <hr>
+            </div>
+          </div>
+          <br><br>
+        </div>
+      </div>
+    </main>
+    <footer class="container-fluid">
+      <p>&copy; E.T 2017 All Right Reserved</p>
+    </footer>
   </body>
+  <script type="text/javascript">
+    $(document).ready(function() {
+      $(".js-example-basic-single").select2({
+        placeholder: "Search Menu..",
+        allowClear: true
+      });
+    });
+  </script>
 </html>
