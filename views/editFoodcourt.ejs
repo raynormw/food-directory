@@ -2,24 +2,24 @@
 <%- include ./partials/menu.ejs %>
 
   <div class="row">
-    <form class="col s6 offset-s3" action="/users/createFoodcourt" method="post">
+    <form class="col s6 offset-s3" action="/users/update-foodcourt/<%=data.id%>" method="post">
       <div class="input-field col s12">
         <label for="name">Name</label><br>
-        <input type="text" name="name" value="" required><br>
+        <input type="text" name="name" value="<%= data.name%>" required><br>
       </div>
       <div class="input-field col s12">
         <label for="address">Address</label><br>
-        <input type="text" name="address" value="" required><br>
+        <input type="text" name="address" value="<%= data.address%>" required><br>
       </div>
       <div class="input-field col s12">
         <label for="city">City</label><br>
-        <input type="text" name="city" value="" required><br>
+        <input type="text" name="city" value="<%= data.city%>" required><br>
       </div>
       <div class="input-field col s12">
         <label for="picture">Picture</label><br>
-        <input type="text" name="picture" value="" required><br>
+        <input type="text" name="picture" value="<%= data.picture%>" required><br>
       </div>
-      <button type="submit" name="add">Insert</button>
+      <button type="submit" name="add">Update</button>
 
     </form>
   </div>
