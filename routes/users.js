@@ -102,7 +102,7 @@ router.post('/createResto', function(req, res, next) {
   let id_foodcourt  = req.body.id_foodcourt || ''
   db.Resto.create(req.body)
   .then(() => {
-    res.redirect('addFoodcourt')
+    res.redirect('addResto')
   })
   .catch((err) => {
     res.redirect(err)
