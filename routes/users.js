@@ -141,9 +141,6 @@ router.get('/edit-resto/:id', function(req, res) {
     },
     include : [db.Foodcourt]
   })
-  // .then(restos => {
-  //   res.render('editResto', { data : restos});
-  // })
   .then(restos => {
     db.Foodcourt.findAll()
     .then(foodcourts => {
